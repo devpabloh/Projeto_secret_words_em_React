@@ -27,7 +27,7 @@ function App() {
   const [pickedCategory, setPickedCategory] = useState("")
   const [latters, setLetters] = useState([])
 
-  const pickedWordAndCategoy = ()=>{
+  const pickedWordAndCategory = ()=>{
     const categories = Object.keys(words)
     const category = categories[Math.floor(Math.random() * Object.keys(categories).length)];
   };
@@ -37,6 +37,7 @@ function App() {
   const startGame = ()=>{
 
     /* picked word and picked category */
+    pickedWordAndCategory();
 
 
 
